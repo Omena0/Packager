@@ -1,26 +1,27 @@
 # Packager
 
- Packages Python scripts
+ Packages Python scripts to distrubute easily.
+ Instead of sending a sketchy looking folder full of dlls,
+ now you only need the .pkg and something to run it.
 
 ## Creating a Package
 
 ```bash
-Usage: create_package --infile <input python script> --outfile <output package name>
+Usage: create_package <input python script>
 ```
-
-You dont have to add .pkg to the end of the --outfile argument
 
 ## Running a package
 
-## Normal run
+### Normal
 
-Right click the file and click run with, then just find run_package.exe.
-Make sure to select to always run .pkg files with it.
+Right click the file and click open with => Choose another app
+Check "Always use this app to open .pkg files"
+Click "More apps" => Look for another app on this pc => Navigate to this repo and select dist/run_package.exe as the application.
 
-## Manual run
+You can also just drag and drop the pkg on the executable (aka. Open with)
+
+### From Cmd
 
 ```bash
 Usage: run_package <.pkg file>
 ```
-
-Or just open the package with run_package.exe
